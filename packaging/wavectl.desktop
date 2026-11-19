@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=wavectl
+Comment=Priority ducking, routing and Bluetooth for PipeWire
+Exec=wavectl-gui
+Icon=wavectl
+Categories=AudioVideo;Audio;Mixer;Settings;
+Keywords=audio;pipewire;bluetooth;ducking;volume;

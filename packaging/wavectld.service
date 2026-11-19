@@ -1,0 +1,12 @@
+[Unit]
+Description=wavectl daemon (priority ducking for PipeWire sources)
+After=pipewire.service wireplumber.service
+Wants=pipewire.service wireplumber.service
+
+[Service]
+ExecStart=@out@/bin/wavectld
+Restart=on-failure
+RestartSec=2
+
+[Install]
+WantedBy=default.target

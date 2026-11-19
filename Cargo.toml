@@ -1,0 +1,8 @@
+[workspace]
+resolver = "2"
+members = ["crates/core", "crates/daemon", "crates/client", "crates/cli", "crates/tray", "crates/gui"]
+
+[workspace.package]
+edition = "2021"
+version = "0.1.0"
+license = "MIT"

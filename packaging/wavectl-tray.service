@@ -1,0 +1,12 @@
+[Unit]
+Description=wavectl tray icon
+After=wavectld.service graphical-session.target
+PartOf=graphical-session.target
+
+[Service]
+ExecStart=@out@/bin/wavectl-tray
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=graphical-session.target
